@@ -54,3 +54,16 @@ and switch between indefinite levels of styles.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Thu Jan 05 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.2-2
++ Revision: 757669
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.2-1
++ Revision: 719950
+- texlive-xskak
+- texlive-xskak
+- texlive-xskak
+
