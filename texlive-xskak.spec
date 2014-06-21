@@ -1,12 +1,12 @@
-# revision 19440
+# revision 33602
 # category Package
 # catalog-ctan /macros/latex/contrib/xskak
-# catalog-date 2008-10-20 22:21:01 +0200
+# catalog-date 2014-04-21 13:18:36 +0200
 # catalog-license lppl
-# catalog-version 1.2
+# catalog-version 1.3a
 Name:		texlive-xskak
-Version:	1.2
-Release:	7
+Version:	1.3a
+Release:	1
 Summary:	An extension to the skak package for chess typesetting
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/xskak
@@ -54,16 +54,3 @@ and switch between indefinite levels of styles.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Thu Jan 05 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.2-2
-+ Revision: 757669
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.2-1
-+ Revision: 719950
-- texlive-xskak
-- texlive-xskak
-- texlive-xskak
-
