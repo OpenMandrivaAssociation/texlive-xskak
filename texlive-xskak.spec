@@ -5,8 +5,8 @@
 # catalog-license lppl
 # catalog-version 1.3a
 Name:		texlive-xskak
-Version:	1.3a
-Release:	4
+Version:	1.4
+Release:	1
 Summary:	An extension to the skak package for chess typesetting
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/xskak
