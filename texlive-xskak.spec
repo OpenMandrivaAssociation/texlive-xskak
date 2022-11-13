@@ -1,19 +1,13 @@
-# revision 33602
-# category Package
-# catalog-ctan /macros/latex/contrib/xskak
-# catalog-date 2014-04-21 13:18:36 +0200
-# catalog-license lppl
-# catalog-version 1.3a
 Name:		texlive-xskak
-Version:	1.4
-Release:	2
+Version:	51432
+Release:	1
 Summary:	An extension to the skak package for chess typesetting
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/xskak
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/xskak.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/xskak.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/xskak.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/xskak.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/xskak.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/xskak.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -27,27 +21,24 @@ parsing commands can handle and offers an interface to define
 and switch between indefinite levels of styles.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/tex/latex/xskak/xskak-keys.sty
-%{_texmfdistdir}/tex/latex/xskak/xskak-nagdef.sty
-%{_texmfdistdir}/tex/latex/xskak/xskak.sty
-%doc %{_texmfdistdir}/doc/latex/xskak/README
-%doc %{_texmfdistdir}/doc/latex/xskak/README.TEXLIVE
+%{_texmfdistdir}/tex/latex/xskak
+%doc %{_texmfdistdir}/doc/latex/xskak
 #- source
-%doc %{_texmfdistdir}/source/latex/xskak/xskak-src.dtx
-%doc %{_texmfdistdir}/source/latex/xskak/xskak.ins
+%doc %{_texmfdistdir}/source/latex/xskak
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
