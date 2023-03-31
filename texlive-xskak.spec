@@ -1,6 +1,6 @@
 Name:		texlive-xskak
 Version:	51432
-Release:	1
+Release:	2
 Summary:	An extension to the skak package for chess typesetting
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/xskak
