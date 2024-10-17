@@ -3,7 +3,7 @@ Version:	51432
 Release:	2
 Summary:	An extension to the skak package for chess typesetting
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/xskak
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/xskak
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/xskak.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/xskak.doc.r%{version}.tar.xz
